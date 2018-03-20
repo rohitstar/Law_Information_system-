@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>User Info form</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+
+		<link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/default.css') }}" />
+		<link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/component.css') }}" />
+		<script type=text/javascript src="{{url_for('static', filename='js/modernizr.custom.js') }}"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>LawFirm-User Interaction page</span>
+				<h1>User Information Page</h1>
+				<nav>
+					<a href="index2.html" class="bp-icon bp-icon-prev" data-info="previous page"><span>Previous Page</span></a>
+					</nav>
+			</header>
+			<div class="main">
+				<form class="cbp-mc-form">
+					<div class="cbp-mc-column">
+						<label for="first_name">Assignor's Name</label>
+	  					<input type="text" id="first_name" name="first_name" placeholder="Mohit">
+	  					<label for="last_name">Last Name</label>
+	  					<input type="text" id="last_name" name="last_name" placeholder="Verma">
+	  					<label for="email">Public Key</label>
+	  					<input type="text" id="email" name="email" placeholder="">
+	  					<label for="country">Country</label>
+	  					<select id="country" name="country">
+	  						<option>Choose a country</option>
+	  						<option>India</option>
+	  						<option>Italy</option>
+	  						<option>Pakistan</option>
+								<option>Sri Lanka</option>
+								<option>United States</option>
+	  					</select>
+	  					<label for="bio">Biography</label>
+	  					<textarea id="bio" name="bio"></textarea>
+	  				</div>
+	  				<div class="cbp-mc-column">
+	  					<label for="phone">Phone Number</label>
+	  					<input type="text" id="phone" name="phone" placeholder="+91-1234567899">
+						<label for="affiliations">Address</label>
+	  					<textarea id="affiliations" name="affiliations"></textarea>
+	  					<label>Occupation</label>
+	  					<select id="occupation" name="occupation">
+	  						<option>Choose an occupation</option>
+	  						<option>Web Designer</option>
+	  						<option>Web Developer</option>
+	  					</select>
+	  					<label for="cat_name">Assignee's name</label>
+	  					<input type="text" id="cat_name" name="cat_name" placeholder="Apoorv">
+	  					<label for="gagdet">Last Name</label>
+	  					<input type="text" id="gagdet" name="gagdet" placeholder="Agarwal">
+	  				</div>
+	  				<div class="cbp-mc-column">
+	  					<label>Lawfirm names</label>
+	  					<select id="talent" name="talent">
+	  						<option>Choose a Lawfirm</option>
+	  						<option>Khanna and Associates</option>
+	  						<option>Vedanta Law Chambers</option>
+	  						<option>Amicus Publico</option>
+								<option>The Lawdesk</option>
+								<option>P.K Kasliwal and associates</option>
+								<option>Legal square</option>
+								<option>G.D Bansal and Associates</option>
+	  					</select>
+
+	  				</div>
+	  				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Send your data" /></div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

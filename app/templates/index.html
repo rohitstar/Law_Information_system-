@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Input Autocomplete Suggestions Demo</title>
+  <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js">  </script>
+
+   <script type=text/javascript src="{{url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
+  <script type=text/javascript src="{{url_for('static', filename='js/jquery.autocomplete.min.js') }}"></script>
+  <script type=text/javascript src="{{url_for('static', filename='js/currency-autocomplete.js') }}"></script>
+    
+
+
+</head>
+
+<body>
+    <div id="w">
+    <div id="content">
+      <h1>Law Information System</h1>
+      <p>Information which u can search about Law</p>
+
+      <div id="searchfield">
+        <form><input type="text" class="biginput" id="autocomplete"></form>
+      </div>
+
+      <div id="outputbox">
+        <p id="outputcontent">Output will be displayed here</p>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+<a href="{{ url_for('index2') }}"><button  class="buttoon mdl-button  mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Find Lawfirms
+</button></a>
+
+<a href="{{ url_for('index3') }}"><button  class="buttoon mdl-button  mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Create Your Account
+</button></a>
+</br>
+</br>
+
+<a href="{{ url_for('find_template') }}"><button  class="buttoon mdl-button  mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Get Pre-maid Legal Contracts
+</button></a>
+</div>
+  <script type="text/javascript">( function () {window.__Bottr = { u: "58e650d8c1a54f0c0db13a60" };
+  var url = "https://d279m54f1qquet.cloudfront.net/embed/bottr.js?" + Date.now();
+  var element = document.createElement("script");
+  element.id = "bottr-init-js";element.type = "text/javascript";
+  element.dataset.cfasync = "false";element.src = url;document.getElementsByTagName("body")[0].appendChild(element);})();</script>
+</body>
+</html>

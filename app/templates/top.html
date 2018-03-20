@@ -1,0 +1,22 @@
+
+
+
+<html>
+  <head>
+    {% if title %}
+    <title>Top Firms</title>
+    {% else %}
+    <title>These are the top firms for your problem</title>
+    {% endif %}
+  </head>
+  <body>
+  <h1>
+  Top Firms recommended for you
+  </h1>
+    {% for post in posts %}
+    <div><a href="top/firm_page?{{ post.firm }}"><p>{{ post.firm }} </br> <b>{{ post.body }}</b></p></a></div>
+    {% endfor %}
+  </body>
+</html>
+</body>
+</html>
